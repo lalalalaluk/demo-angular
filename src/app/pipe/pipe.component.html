@@ -1,0 +1,10 @@
+<p>Uppercase: {{ 'hello' | uppercase }}</p>
+<p>Lowercase: {{ 'WORLD' | lowercase }}</p>
+<p>Percentage: {{ 0.75 | percent }}</p>
+<p>Price: {{ 42.5 | currency: 'USD' }}</p>
+<p>Number: {{ 12312423425 | number }}</p>
+<p>Formatted Number: {{ 3.1322 | number: '.1-2' }}</p>
+<p>JSON: {{ { "name": "John", "age": 30 } | json }}</p>
+
+<p>Today's date is {{ today | date }}</p>
+<p>Custom date format: {{ today | date: 'yyyy-MM-dd HH:mm:ss' }}</p>

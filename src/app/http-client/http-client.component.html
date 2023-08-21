@@ -1,0 +1,10 @@
+<h2>Author List</h2>
+<button (click)="add()">add</button>
+<ul>
+  <li *ngFor="let author of authors">
+    {{ author.first_name }} {{ author.last_name }}
+    (DOB: {{ author.date_of_birth }} - DOD: {{ author.date_of_death }})
+    <button *ngIf="author.id !== undefined" (click)="update(author.id)">edit</button>
+    <button *ngIf="author.id !== undefined" (click)="delete(author.id)">delete</button>
+  </li>
+</ul>

@@ -4,8 +4,21 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
-"remoteUser": "node",
-"features": {
-	"ghcr.io/devcontainers-contrib/features/angular-cli:2": {}
-}
+	"remoteUser": "node",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/angular-cli:2": {}
+	},
+	"runArgs": [
+		"--name",
+		"demo_angular"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"Angular.ng-template",
+				"GitHub.copilot",
+				"sibiraj-s.vscode-scss-formatter"
+			]
+		}
+	}
 }

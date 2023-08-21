@@ -1,0 +1,6 @@
+<div>
+    <p>Received data from child: {{ dataFromChild }}</p>
+
+    <app-child [receivedData]="dataFromParent" (dataToParent)="onDataFromChild($event)"></app-child>
+    <button (click)="sendDataToChild()">Send Data to Child</button>
+</div>
